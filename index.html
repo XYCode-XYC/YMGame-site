@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<link rel="stylesheet" href="./materialize/css/materialize.min.css">
+	<link rel="stylesheet" href="./static/css/framework/main.css">
+	<link rel="stylesheet" href="./static/css/framework/MaterialIcons.css">
+	<link rel="stylesheet" href="./static/css/style.css">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>YM Game Site</title>
+</head>
+<body>
+	<!-- 标题 -->
+	<div class="index">
+		<a href="./" class="watch title">YM Studio 我的世界开发者团队</a>
+
+		<p class="watch main-page">首页</p>
+	</div>
+
+	<!-- 简介 -->
+	<div class="backgroud-color-1 p-20 pb-20 text-white center" id="desc">
+		<h4>Hello，这里是 <b>YM Game 我的世界网络游戏</b> 的官网。</h4>
+
+		<p class="spilt">————————————————————————————————————————————————————————————</p>
+
+		<p class="text-white-alpha-50">
+			YMGame主要以 <b>小游戏</b> 为主，目前面对玩家进行 <b>公测</b>！<br>
+
+			参与公测的玩家在 <b>公测结束后</b> 将会获得 <b>公测礼包</b> 一份。<br>
+
+			公测礼包将通过兑换码的方式发放，在服务器内使用 <b><i>/code {激活码}</i></b> 激活您的礼包。
+
+			目前开放了部分小游戏，后期将会根据情况开放各类大小型游戏。<br>你们的支持与游玩就是我们制作的动力！
+
+			我们也正在研发我们的原创玩法，欢迎各位冒险家前来体验！
+		</p>
+
+		<p class="spilt">————————————————————————————————————————————————————————————</p>
+
+		<a class="waves-effect waves-light btn" onclick="jump('schedule')"><i class="material-icons left">dashboard</i>下一页</a>
+	</div>
+
+	<!-- 分割线 -->
+	<div class="pb-10"></div>
+
+	<!-- 进度 -->
+	<div class="backgroud-color-4 p-20 pb-20 text-white center" id="schedule">
+		<h4>我们目前 <b>开发的怎么样了</b>？</h4>
+
+		<p class="spilt">————————————————————————————————————————————————————————————</p>
+
+		<ul class="collapsible popout" data-collapsible="accordion">
+			<!-- 通过初审 -->
+			<li>
+				<div class="collapsible-header" style="color: black;">
+					<i class="material-icons" style="color: green;">done</i>
+					<span>初审</span>
+				</div>
+
+				<div class="collapsible-body" style="background-color: white; color: black;">
+					<p>
+						<p>
+							初审是每个网络游戏的 必须步骤，
+							通过初审之后，网易会为我们方法开发机，用于网络游戏的开发与测试。
+						</p>
+					</p>
+				</div>
+			</li>
+
+			<!-- 开发测试服 -->
+			<li>
+				<div class="collapsible-header" style="color: black;">
+					<i class="material-icons" style="color: skyblue;">replay</i>
+					<span>开发测试服</span>
+				</div>
+
+				<div class="collapsible-body" style="background-color: white; color: black;">
+					<p>
+						<p>	
+							我们的程序员（XYCode）将在 YM Game 内编写各种代码，并将他们部署到开发机。<br><br>
+							接下来，测试员将会通过 <i>MOD-PC</i> 或 <i>我的世界测试版</i> 登录到 <i>YM Game-测试版</i>。<br><br>
+							当测试出 BUG 的时候，测试员通过 <i>滴答清单</i> 发送 <b>BUG FIX</b> 任务，待程序员修复后再次测试，当没有 BUG 时，关于此 BUG 的 <b>BUG FIX</b> 任务将会被标记为 <i>完成</i> 状态。
+						</p>
+					</p>
+				</div>
+			</li>
+
+			<!-- 开发正式服 -->
+			<li>
+				<div class="collapsible-header" style="color: black;">
+					<i class="material-icons" style="color: darkred;">power_settings_new</i>
+					<span>开发正式服</span>
+				</div>
+
+				<div class="collapsible-body" style="background-color: white; color: black;">
+					<p>
+						<p>	
+							开发正式服的主要内容就是将 <b>测试服</b> 的内容迁移到 <b>正式服</b>。
+							正式服的服务器一般为如下：
+						</p>
+
+						<table>
+							<tr>
+								<th class="center">配置项</th>
+								<th class="center">配置内容</th>
+								<th class="center">备注</th>
+							</tr>
+
+							<tr>
+								<td class="center">性能类型</td>
+								<td class="center">低频</td>
+							</tr>
+
+							<tr>
+								<td class="center">内存类型</td>
+								<td class="center">128G</td>
+							</tr>
+
+							<tr>
+								<td class="center">硬盘类型</td>
+								<td class="center">800G SSD</td>
+							</tr>
+
+							<tr>
+								<td class="center">申请数量</td>
+								<td class="center">1 台</td>
+								<td class="center">数量会根据后期情况适量增加</td>
+							</tr>
+						</table>
+					</p>
+				</div>
+			</li>
+
+			<!-- 正式上线 -->
+			<li>
+				<div class="collapsible-header" style="color: black;">
+					<i class="material-icons" style="color: darkred;">power_settings_new</i>
+					<span>正式上线</span>
+				</div>
+
+				<div class="collapsible-body" style="background-color: white; color: black;">
+					<p>
+						<p>	
+							目前 YM Game 暂未上线，上线之后大家即可自由进入网络游戏中游玩。
+						</p>
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 页脚 -->
+	<footer class="page-footer">
+	  <div class="container">
+		<div class="row">
+			<div class="col l6 s12">
+				<h5 class="white-text">YM Game 我的世界网络游戏</h5>
+				<p class="grey-text text-lighten-4">YM Game 是 YM Studio 旗下的网络游戏，YM Game 预计在 <b>2021 年 7 月 5 日</b> 上线</p>
+			</div>
+			<div class="col l4 offset-l2 s12">
+			<h5 class="white-text">链接</h5>
+				<ul>
+					<li>
+						<a class="grey-text text-lighten-3" target="_blank" href="https://host.retiehe.com/">技术支持：热铁盒虚拟主机</a>
+					</li>
+
+					<li>
+						<a class="grey-text text-lighten-3" target="_blank" href="https://xycode.club/">开发团队：YM Studio</a>
+					</li>
+
+					<li>
+						<a class="grey-text text-lighten-3" target="_blank" href="./en-us">YM Game 英文站</a>
+					</li>
+
+					<li>
+						<a class="grey-text text-lighten-3" target="_blank" href="./jp">YM Game 日本站</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	  </div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2020-2021 版权所有  Minecraft YM Game Team
+			</div>
+		</div>
+	</footer>
+</body>
+
+<script src="./jquery/jquery.min.js"></script>	
+<script src="./materialize/js/materialize.min.js"></script>
+<script src="./static/js/app.js"></script>
+
+</html>
